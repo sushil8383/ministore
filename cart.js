@@ -102,6 +102,8 @@ function updateCartDisplay() {
 
         const addButton = document.createElement('button');
         addButton.innerText = '+';
+        addButton.className='incre';
+
         addButton.onclick = function() {
             addToCart(item);
         };
@@ -109,6 +111,7 @@ function updateCartDisplay() {
 
         const removeButton = document.createElement('button');
         removeButton.innerText = '-';
+        removeButton.className = 'decre';
         removeButton.onclick = function() {
             removeFromCart(item);
         };
