@@ -85,6 +85,8 @@ function placeorder(){
             alert(`your order is successfully placed with ${cartCount} items and total amount $${totalAmount}`);
         
             window.location.replace("index.html");
+        }else{
+            alert("cart is empty")
         }
     
 
