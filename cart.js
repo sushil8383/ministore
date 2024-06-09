@@ -84,7 +84,7 @@ function placeorder(){
         {
             alert(`your order is successfully placed with ${cartCount} items and total amount $${totalAmount}`);
         
-            window.location.replace("cart.html");
+            window.location.replace("index.html");
         }
     
 
