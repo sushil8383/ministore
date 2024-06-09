@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Sk Fashion</title>
+  <link rel="icon" type="image/x-icon" href="/img/cat-1.jpg">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)">Mini Store</a>
+    <a class="navbar-brand" href="">Sk Fashion</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="mynavbar">
       <ul class="navbar-nav me-auto text-center">
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Home</a>
+          <a class="nav-link" href="">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">About</a>
-        </li>
+        
 
         <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
     
       </ul>
 
       <form class="d-flex justify-content-center">
-        <button id="count" class="btn btn-primary 
-        "type="button">cart-0</button>
+        <button id="count" class="btn btn-primary fa fa-shopping-cart
+        "type="button"></button>
         <button id="view-cart" class="btn btn-primary"
          type="button" onclick="viewCart()"><a style="
         color: white; text-decoration: none;" 
@@ -48,7 +45,7 @@
 </nav>
 
 <section>
-    <div class="container-fluid" style="margin-top: 80px;">
+    <div class="whole container-fluid" style="margin-top: 80px;">
         
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -81,23 +78,187 @@
 </section>
 
 <section>
-    <div class=" container-fluid text-center" id="items-containers">
+    <div class=" whole container-fluid text-center" id="items-containers">
       
     </div>
 </section>
 <section>
-  <div class="sidebar container-fluid">
-    <div class="row">
-    <div id="cart-details" class="col-sm-4 d-flex gap-5">
+  <div class="sidebar container ">
+  
+    <div id="cart-details">
 
     </div>
-  </div>
+    <h3 style="margin-top: 5px;;">Total Amount: <span id="total-amount">$0</span></h3>
 
-    <h3 style="margin-top:20px;">Total Amount: <span id="total-amount">$0</span></h3>
   
     <span id="close" onclick="displaygone()">close</span>
+    <div><button class="btn btn-success" onclick="placeorder()" style="margin-top: 120px;">Place Order</button>
+    </div>
+    <div class="mt-2"><span style="font-style: italic;">Cards we accept</span><br><img src="/img/payments.png" alt="alt"></div></div>
+
   </div>
+
 </section>
+
+<section>
+  <div class="container-fluid text-center">
+    <hr><h1>Our partners </h1>
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="img/vendor-1.jpg" alt="">
+      </div>
+      <div class="col-sm-3">
+        <img src="img/vendor-2.jpg" alt="">
+      </div>
+      <div class="col-sm-3">
+        <img src="img/vendor-3.jpg" alt="">
+      </div>
+      <div class="col-sm-3">
+        <img src="img/vendor-4.jpg" alt="">
+      </div>
+     
+     
+    </div>  
+  </div>
+
+</section>
+ <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: #6351ce"
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fa fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Sk Fashion</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              We Sk Fashion here to provide you the best collection and branding cross wrold.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Mens collection</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Women collection</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Kids</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Home & Living</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold" id="contact">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fa fa-home mr-3"></i> New Delhi, Delhi 110001</p>
+            <p><i class="fa fa-envelope mr-3"></i> skfashion@gmail.com</p>
+            <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2024 Copyright:
+      <a class="text-white" href="https://sushil8383.github.io/ministote"
+         >skfashion.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
 
 
 <script src="cart.js"></script>
