@@ -58,6 +58,7 @@ function addToCart(item) {
     
     saveCart();
     updateCartDisplay();
+    alert("item added to cart");
 }
 
 // Function to remove an item from the cart
