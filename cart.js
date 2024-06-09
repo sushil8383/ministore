@@ -83,7 +83,7 @@ function placeorder(){
    
     if(cartCount>0)
         {
-            alert(`your order is successfully placed with ${cartCount} items and total amount $${totalAmount}`);
+            alert(`your order is successfully placed with ${cartCount} item and total amount $${totalAmount}`);
         
             window.location.replace("index.html");
         }else{
