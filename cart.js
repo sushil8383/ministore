@@ -3,7 +3,7 @@ let totalAmount = 0;
 let cartItems = [];
 
 const arrayItems = [
-    { id: 1, name: 'table lamp', image: 'img/product-6.jpg', price: 200.00 },
+    { id: 1, name: 'Table lamp', image: 'img/product-6.jpg', price: 200.00 },
     { id: 2, name: 'Dslr camera', image: 'img/cat-2.jpg', price: 150.00 },
     { id: 3, name: 'Puma shoes', image: 'img/cat-3.jpg', price: 300.00 },
     { id: 4, name: 'Skin care', image: 'img/cat-4.jpg', price: 275.00 },
